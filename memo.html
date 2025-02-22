@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ME TO YOU</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        #content { display: none; }
+    </style>
+</head>
+<body>
+
+    <div id="login">
+        <h2>Enter Password</h2>
+        <input type="password" id="password">
+        <button onclick="checkPassword()">Submit</button>
+        <p id="error" style="color: red;"></p>
+    </div>
+
+    <div id="content">
+        <h1>HEY!</h1>
+        <p>At sa mga oras na pinipigilan ko ang aking sarili na tanungin ka kung kamusta ka,                                            tahimik ko parin na ipinapanalangin na sana ay nasa maayos ka                                                                             I dont want to reach out to you but if ever you see this or yk I just want to let you now that if you ever wonder -just for a second, wether someone cares for you with every ounce of your being, I hope you felt it somehow. In the quiet moments, in the way the stars still shine, in the way the wind softly whispers your name.                                                                                        Because I do. I always have. I ALWAYS WILL</p>
+        <video width="640" height="360" controls autoplay loop>
+            <source src="C:\Users\Edrian Paler\Downloads\video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <script>
+        function checkPassword() {
+            var password = document.getElementById("password").value;
+            var correctPassword = "makochives"; // Change this to a stronger password
+
+            if (password === correctPassword) {
+                document.getElementById("login").style.display = "none";
+                document.getElementById("content").style.display = "block";
+            } else {
+                document.getElementById("error").innerText = "Incorrect password!";
+            }
+        }
+    </script>
+
+</body>
+</html>
